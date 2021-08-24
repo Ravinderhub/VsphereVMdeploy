@@ -21,5 +21,17 @@ java -version
       }
     }
 
+    stage('Build with Maven') {
+      steps {
+        sh 'mvn compile test package'
+      }
+    }
+
+    stage('Post Build Steps') {
+      steps {
+        writeFile(file: 'Status', text: 'Hey it worked!!!!')
+      }
+    }
+
   }
 }
