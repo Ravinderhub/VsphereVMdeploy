@@ -1,7 +1,7 @@
 provider "vsphere" {
-  user           = "DA003259@mud.internal.co.za"
-  password       = "Summer@100"
-  vsphere_server = "srv008097.mud.internal.co.za"
+  user           = "Test@example.com"
+  password       = "password123"
+  vsphere_server = "srv008097.example.com"
 
   # if you have a self-signed cert
   allow_unverified_ssl = true
